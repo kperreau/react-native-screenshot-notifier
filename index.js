@@ -10,8 +10,8 @@ import { DeviceEventEmitter, PermissionsAndroid, AppState } from "react-native";
 //#region Android permission management
 const getPermission = async (options = {}) => {
   const {
-    title = "Screenshot Protector",
-    message = "HIGHLY RECOMMENDED. Permission to detect when a screenshot is taken while this app is open.",
+    title = "BeReal Roulette",
+    message = "We need your permission to access to your photo album and give you the possibility to send a Roulette picture.",
     buttonNeutral = "Ask me later",
     buttonNegative = "Cancel",
     buttonPositive = "OK"
