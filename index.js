@@ -18,7 +18,7 @@ const getPermission = async (options = {}) => {
   } = options;
   const granted = await PermissionsAndroid.request(
     PermissionsAndroid.PERMISSIONS.READ_EXTERNAL_STORAGE,
-    { title, message, buttonNeutral, buttonNegative, buttonPositive }
+    // { title, message, buttonNeutral, buttonNegative, buttonPositive }
   );
   if (granted === PermissionsAndroid.RESULTS.GRANTED) {
     //we can resume
