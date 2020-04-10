@@ -59,6 +59,9 @@ const start = async options => {
     options = {};
     callback = null;
   }
+  if (!options.isEnabled) {
+    return false;
+  }
   await getPermission(options);
   if (callback) addListener(callback);
   await doStart();
