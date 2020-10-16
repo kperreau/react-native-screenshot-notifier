@@ -112,7 +112,11 @@ const useScreenshotNotifier = options => {
         setPath(path);
       }
     });
-    return () => stop();
+    return () => {
+      if (options.isEnabled) {
+        stop();
+      }
+    };
   }, [options]);
   return { id, fileName, path };
 };
